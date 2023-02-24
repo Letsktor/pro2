@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<form action="dekoder.php" method="post">
+    Felhasználónév: <input type="text" name="name"><br>
+   Jelszó: <input type="text" name="password"><br>
+    <input type="submit" onclick="lol()">
+    </form>
+    <script>
+        function lol()
+        {
+            document.createElement().innerHTML="<?php include 'dekoder.php';?>";
+        }
+    </script>
+    
+</body>
+
+</html>
